@@ -1,0 +1,97 @@
+.navbar{
+    background-color: #292929;
+}
+.nav-link, .navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+.nav-link:hover{
+    background-color: #f4f4f4;
+    color: #292929;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-toggler{
+    background-color: #fff !important;
+}
+
+.header{
+    background-image: url('https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    background-color: rgba(42, 2, 90, 0.2);
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rbga(244,244,244,0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: 0;
+    padding: 2em;
+}
+
+.description h3{
+    color: #f3d541;
+}
+.description p{
+    color: rgb(222, 222, 222);
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 10%;
+    padding-right: 10%;
+    
+}
+.description button{
+    border: 1px solid #292929;
+    background-color: #9a9a9a;
+    color: #292929;
+}
+
+.arraysorting{
+    margin: 4em 0;
+    position: relative;
+}
+.arraysorting h1{
+    color:#292929;
+    margin: 2em;
+}
+
+.arraysorting .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+}
+.arraysorting .card-img-block{
+    display: grid;
+    justify-content: center;
+}
+.arraysorting .card-img-block .card-img{
+    height: 15em;
+}
+.arraysorting .card-title{
+    color: #21065b;
+}
+.arraysorting .card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2em;
+}
+
+.arraysorting .card-body{
+    padding: 1em;
+}
+.arraysorting .card:hover .card-text{
+    overflow: visible;
+    height: auto;
+}

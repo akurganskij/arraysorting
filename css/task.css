@@ -60,3 +60,21 @@
 .tray{
     background-color: #ccc;
 }
+
+.simpleswapcode{
+    margin: 4em 0;
+    position: relative;
+}
+.simpleswapcode h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.simpleswapcode p{
+    color:#292929;
+    margin-bottom: 1em;
+}
+.simpleswapcode .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+}

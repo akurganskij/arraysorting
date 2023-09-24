@@ -73,8 +73,23 @@
 .simpleswapcode p{
     color:#292929;
     margin-bottom: 1em;
+    font-size: 1.5em;
 }
 .simpleswapcode .card{
     box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+}
+.simpleswapcode .card p{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+.field .card{
+    width: 3em;
+    height: 3em;
+}
+.field p{
     margin-top: 1em;
 }

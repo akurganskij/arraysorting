@@ -18,3 +18,41 @@
 .navbar-toggler{
     background-color: #fff !important;
 }
+.simpleswap{
+    margin: 4em 0;
+    position: relative;
+}
+.simpleswap h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.simpleswap p{
+    color:#292929;
+    margin-bottom: 1em;
+}
+.simpleswap .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+}
+.simpleswap .card .img-card{
+    height: 20em;
+}
+
+.check{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.check h5{
+    display: none;
+}
+
+
+.correct{
+    color: #14ad00;
+}
+
+.uncorrect{
+    color: #d10000;
+}

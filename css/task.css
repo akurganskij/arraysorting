@@ -78,6 +78,8 @@
 .simpleswapcode .card{
     box-shadow: 0 0 20px #ccc;
     margin-top: 1em;
+    width: 2em;
+    height: 2em;
 }
 .simpleswapcode .card p{
     display: grid;

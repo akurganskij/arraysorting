@@ -34,6 +34,7 @@
 .simpleswap .card{
     box-shadow: 0 0 20px #ccc;
     margin-top: 1em;
+    height: 70%;
 }
 .simpleswap .card .img-card{
     height: 20em;

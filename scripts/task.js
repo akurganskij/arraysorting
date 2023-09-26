@@ -1,54 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-
-    var dragSrcEl = null;
-
-function handleDragStart(e){
-    this.style.opacity = '0.4';
-    dragSrcEl = this;
-
-    e.dataTransfer.effectAllowed = 'move';
-    e.dataTransfer.setData('text/html', this.innerHTML);
-}
-
-function handleDragOver(e) {
-    if (e.preventDefault) {
-      e.preventDefault();
-    }
-    
-    e.dataTransfer.dropEffect = 'move';
-    
-    return false;
-  }
-
-function handleDragEnd(e) {
-    this.style.opacity = '1';
-
-    items.forEach(function (item) {
-        item.classList.remove('over');
-      });
-  }
-
-function handleDrop(e) {
-    e.stopPropagation();
-
-    if(!String(this.innerHTML).includes('png')){ 
-        if (dragSrcEl !== this) {
-            dragSrcEl.innerHTML = this.innerHTML;
-            this.innerHTML = e.dataTransfer.getData('text/html');
-        }
-    }
-  
-    return false;
-  }
-  let items = document.querySelectorAll('.card');
-  items.forEach(item => {
-    item.addEventListener('dragstart', handleDragStart, false);
-    item.addEventListener('dragover', handleDragOver, false);
-    item.addEventListener('drop', handleDrop, false);
-    item.addEventListener('dragend', handleDragEnd, false);
-  });
-});
-
 function oncheckclick(){
     var card1 = document.getElementById("card1")
     var card2 = document.getElementById("card2")
@@ -65,3 +14,47 @@ function oncheckclick(){
     }
     return false;
 };
+
+$(function() {
+  //grouped lists
+  $('ul.grouped').sortable({
+    group: true
+  });
+
+  //normal list
+  $('ul.normal').sortable({
+    autocreate: true,
+    update: function(evt) {
+      console.log(JSON.stringify($(this).sortable('serialize')));
+    }
+  });
+
+  //remaining lists
+  $('ul.float, ul.inline').sortable({
+    update: function(evt) {
+      console.log(JSON.stringify($(this).sortable('serialize')));
+    }
+  });
+
+  //div list
+  $('.list.parent').sortable({container: '.list', nodes: ':not(.list)'});
+
+  //draggable
+  $('.drag').draggable();
+  $('.draggables').draggable({delegate: 'button', placeholder: true});
+  $('.draghandle').draggable({handle: '.handle', placeholder: true});
+  $('.dragdrop').draggable({
+    revert: true,
+    placeholder: true,
+    droptarget: '.drop',
+    drop: function(evt, droptarget) {
+      $(this).appendTo(droptarget).draggable('stop');
+    }
+  });
+
+  //off switch
+  $('.off').on('click', function() {
+    $('.sortable').each(function() { $(this).sortable('destroy'); });
+    $('.draggable').each(function() { $(this).draggable('destroy'); });
+  });
+});

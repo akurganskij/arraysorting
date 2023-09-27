@@ -10,11 +10,11 @@
         <link rel="icon" type="image/x-icon" href="../img/siteicon.ico">
     </head>
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
     <script src="../scripts/draganddrop.js"></script>
-    <script src="../scripts/task1.js"></script>
+    <script src="../scripts/example.js"></script>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <a href="../index.html" class="navbar-brand">Головна</a>
@@ -29,21 +29,21 @@
             </ul>
         </div>
     </nav>
-
-    <div class="simpleswap">
-        <h1 class="text-center">Простий обмін</h1>
-        <p class="text-center">Обміняти два телефони місцями. Для цього треба пересунути один телефон на вільне місце потім поставити другий телефон на перше місце. Після цього перемістити перший телефон на місце, де був другий.</p>
+    <div class="example">
+        <h1 class="text-center">Життєвий приклад</h1>
+        <p class="text-center">Ваш друг попросив запропонувати список телефонів. У магазині є у наявності лише 5 моделей. Розташуйте їх у тому порядку, у якому би Ви радили їх своєму другу</p>
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div id="card1" class="card drop">
-                        <img class="img-card dragdrop" src="../img/sorting/1.png">
+                        <img class="img-card dragdrop" src="../img/sorting/5.png">
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div id="card2" class="card tray drop">
-                       
+                    <div id="card2" class="card drop">
+                        <img class="img-card dragdrop" src="../img/sorting/1.png">
                     </div>
                 </div>
 
@@ -52,13 +52,23 @@
                         <img class="img-card dragdrop" src="../img/sorting/2.png">
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div id="card4" class="card drop">
+                        <img class="img-card dragdrop" src="../img/sorting/4.png">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div id="card5" class="card drop">
+                        <img class="img-card dragdrop" src="../img/sorting/3.png">
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
-    <div class="check">
-        <h5 id="correct" class="correct">Завдання виконано правильно!</h5>
-        <h5 id="uncorrect" class="uncorrect">Завдання виконано неправильно</h5>
-        <button class="btn" onclick="oncheckclick()">Перевірити</button>
     </div>
     </body>
 </html>

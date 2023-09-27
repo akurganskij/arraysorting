@@ -1,10 +1,21 @@
 function oncheckclick(){
-    var card1 = document.getElementById("card1")
-    var card2 = document.getElementById("card2")
-    var card3 = document.getElementById("card3")
+    var field1 = document.getElementById("field1")
+    var field2 = document.getElementById("field2")
+    var field3 = document.getElementById("field3")
+    var field4 = document.getElementById("field4")
+    var field5 = document.getElementById("field5")
+    var field6 = document.getElementById("field6")
 
-    if(String(card1.innerHTML).includes("2.png") &&
-       String(card3.innerHTML).includes("1.png")){
+    if(String(field1.innerHTML).includes(">c<") &&
+       String(field6.innerHTML).includes(">c<") && 
+       ( (String(field2.innerHTML).includes(">a<") &&
+       String(field3.innerHTML).includes(">a<") &&
+       String(field4.innerHTML).includes(">b<") &&
+       String(field5.innerHTML).includes(">b<"))||
+       (String(field2.innerHTML).includes(">b<") &&
+       String(field3.innerHTML).includes(">b<") &&
+       String(field4.innerHTML).includes(">a<") &&
+       String(field5.innerHTML).includes(">a<")))){
         document.getElementById("uncorrect").style.display = "none";
         document.getElementById("correct").style.display = "block";
     }
@@ -48,7 +59,11 @@ $(function() {
     placeholder: true,
     droptarget: '.drop',
     drop: function(evt, droptarget) {
+      var t = $(droptarget).children();
+      var p = $(this).parent()
+      $(droptarget).children().detach()
       $(this).appendTo(droptarget).draggable('stop');
+      $(t).appendTo(p).draggable('stop');
     }
   });
 

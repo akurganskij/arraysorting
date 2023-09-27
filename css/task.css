@@ -98,3 +98,28 @@
 .field p{
     margin-top: 1em;
 }
+
+
+.example{
+    margin: 4em 0;
+    position: relative;
+}
+.example h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.example p{
+    color:#292929;
+    margin-bottom: 1em;
+}
+.example .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+    height: 15em;
+    display: grid;
+    justify-content: center;
+}
+.example .card .img-card{
+    height: 15em;
+}

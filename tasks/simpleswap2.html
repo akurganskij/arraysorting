@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
     <script src="../scripts/draganddrop.js"></script>
-    <script src="../scripts/task.js"></script>
+    <script src="../scripts/task2.js"></script>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <a href="../index.html" class="navbar-brand">Головна</a>
@@ -49,11 +49,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div id="line3" class="field">
                         <div class="row">
-                            <div class="card drop" draggable="true">
+                            <div id="field1" class="card drop" draggable="true">
 
                             </div>
                             <p> = </p>
-                            <div class="card drop" draggable="true">
+                            <div id="field2" class="card drop" draggable="true">
 
                             </div>
                         </div>
@@ -64,11 +64,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div id="line4" class="field">
                         <div class="row">
-                            <div class="card drop" draggable="true">
+                            <div id="field3" class="card drop" draggable="true">
 
                             </div>
                             <p> = </p>
-                            <div class="card drop" draggable="true">
+                            <div id="field4" class="card drop" draggable="true">
 
                             </div>
                         </div>
@@ -79,11 +79,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div id="line5" class="field">
                         <div class="row">
-                            <div class="card drop" draggable="true">
+                            <div id="field5" class="card drop" draggable="true">
 
                             </div>
                             <p> = </p>
-                            <div class="card drop" draggable="true">
+                            <div id="field6" class="card drop" draggable="true">
 
                             </div>
                         </div>
@@ -121,7 +121,16 @@
                     </div>
                 </div>
 
+
             </div>
+
+            <div class="check">
+                <h5 id="correct" class="correct">Завдання виконано правильно!</h5>
+                <h5 id="uncorrect" class="uncorrect">Завдання виконано неправильно</h5>
+                <button class="btn" onclick="oncheckclick()">Перевірити</button>
+            </div>
+
+            
         </div>
     </div>
     </body>

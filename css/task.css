@@ -91,6 +91,10 @@
     margin: 0;
 }
 
+.simpleswapcode .field{
+    margin-left: 1em;
+}
+
 .field .card{
     width: 3em;
     height: 3em;
@@ -156,5 +160,48 @@
     height: 3em;
 }
 .mathswapcode .field{
+    margin-left: 1em;
+}
+
+.mathswap{
+    margin: 4em 0;
+    position: relative;
+    
+}
+.mathswap h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.mathswap p{
+    color:#292929;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.mathswap .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+    width: fit-content;
+    height: 2em;
+}
+.mathswap .card img{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.mathswap .field .card{
+    width: 3em;
+    height: 3em;
+}
+.mathswap .field .card img{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+.mathswap .field{
     margin-left: 1em;
 }

@@ -1,29 +1,27 @@
 function oncheckclick(){
-    var field1 = document.getElementById("field1")
-    var field2 = document.getElementById("field2")
-    var field3 = document.getElementById("field3")
-    var field4 = document.getElementById("field4")
-    var field5 = document.getElementById("field5")
-    var field6 = document.getElementById("field6")
-
-    if(String(field1.innerHTML).includes(">c<") &&
-       String(field6.innerHTML).includes(">c<") && 
-       ( (String(field2.innerHTML).includes(">a<") &&
-       String(field3.innerHTML).includes(">a<") &&
-       String(field4.innerHTML).includes(">b<") &&
-       String(field5.innerHTML).includes(">b<"))||
-       (String(field2.innerHTML).includes(">b<") &&
-       String(field3.innerHTML).includes(">b<") &&
-       String(field4.innerHTML).includes(">a<") &&
-       String(field5.innerHTML).includes(">a<")))){
-        document.getElementById("uncorrect").style.display = "none";
-        document.getElementById("correct").style.display = "block";
-    }
-    else{
-        document.getElementById("correct").style.display = "none";
-        document.getElementById("uncorrect").style.display = "block";
-    }
-    return false;
+        var field1 = document.getElementById("field1")
+        var field2 = document.getElementById("field2")
+        var field3 = document.getElementById("field3")
+        var field4 = document.getElementById("field4")
+        var field5 = document.getElementById("field5")
+        var field6 = document.getElementById("field6")
+    
+        if((String(field1.innerHTML).includes("1.png") &&
+           String(field2.innerHTML).includes("2.png") ||
+           String(field1.innerHTML).includes("2.png") &&
+           String(field2.innerHTML).includes("1.png")) && 
+           String(field3.innerHTML).includes("3.png") &&
+           String(field4.innerHTML).includes("2.png") &&
+           String(field5.innerHTML).includes("3.png") &&
+           String(field6.innerHTML).includes("1.png")){
+            document.getElementById("uncorrect").style.display = "none";
+            document.getElementById("correct").style.display = "block";
+        }
+        else{
+            document.getElementById("correct").style.display = "none";
+            document.getElementById("uncorrect").style.display = "block";
+        }
+        return false;
 };
 
 $(function() {

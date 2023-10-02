@@ -180,9 +180,12 @@
 }
 .mathswap .card{
     box-shadow: 0 0 20px #ccc;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin-top: 1em;
-    width: fit-content;
-    height: 2em;
+    width: 8em;
+    height: 3em;
 }
 .mathswap .card img{
     display: grid;
@@ -193,7 +196,7 @@
 }
 
 .mathswap .field .card{
-    width: 3em;
+    width: 8em;
     height: 3em;
 }
 .mathswap .field .card img{

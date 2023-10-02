@@ -1,21 +1,14 @@
 function oncheckclick(){
-    var field1 = document.getElementById("field1")
-    var field2 = document.getElementById("field2")
-    var field3 = document.getElementById("field3")
-    var field4 = document.getElementById("field4")
-    var field5 = document.getElementById("field5")
-    var field6 = document.getElementById("field6")
-
-    if(String(field1.innerHTML).includes(">c<") &&
-       String(field6.innerHTML).includes(">c<") && 
-       ( (String(field2.innerHTML).includes(">a<") &&
-       String(field3.innerHTML).includes(">a<") &&
-       String(field4.innerHTML).includes(">b<") &&
-       String(field5.innerHTML).includes(">b<"))||
-       (String(field2.innerHTML).includes(">b<") &&
-       String(field3.innerHTML).includes(">b<") &&
-       String(field4.innerHTML).includes(">a<") &&
-       String(field5.innerHTML).includes(">a<")))){
+    var codefield = document.getElementById("code").innerHTML
+    var l1 = String(codefield).indexOf("line1")
+    var l2 = String(codefield).indexOf("line2")
+    var l3 = String(codefield).indexOf("line3")
+    var l4 = String(codefield).indexOf("line4")
+    var l5 = String(codefield).indexOf("line5")
+    var l6 = String(codefield).indexOf("line6")
+    var l7 = String(codefield).indexOf("line7")
+    var l8 = String(codefield).indexOf("line8")
+    if(l2 < l5 && l5 < l7 && l7 < l4 && l4 < l3 && l3 < l1 && l1 < l8 && l8 < l6){
         document.getElementById("uncorrect").style.display = "none";
         document.getElementById("correct").style.display = "block";
     }

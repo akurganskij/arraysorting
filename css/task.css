@@ -123,3 +123,38 @@
 .example .card .img-card{
     height: 15em;
 }
+
+.mathswapcode{
+    margin: 4em 0;
+    position: relative;
+}
+.mathswapcode h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.mathswapcode p{
+    color:#292929;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.mathswapcode .card{
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1em;
+    width: 2em;
+    height: 2em;
+}
+.mathswapcode .card p{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+.mathswapcode .field .card{
+    width: 3em;
+    height: 3em;
+}
+.mathswapcode .field{
+    margin-left: 1em;
+}

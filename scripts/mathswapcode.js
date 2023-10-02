@@ -6,16 +6,14 @@ function oncheckclick(){
     var field5 = document.getElementById("field5")
     var field6 = document.getElementById("field6")
 
-    if(String(field1.innerHTML).includes(">c<") &&
-       String(field6.innerHTML).includes(">c<") && 
-       ( (String(field2.innerHTML).includes(">a<") &&
+    if((String(field1.innerHTML).includes(">a<") &&
+       String(field2.innerHTML).includes(">b<") ||
+       String(field1.innerHTML).includes(">b<") &&
+       String(field2.innerHTML).includes(">a<")) && 
        String(field3.innerHTML).includes(">a<") &&
        String(field4.innerHTML).includes(">b<") &&
-       String(field5.innerHTML).includes(">b<"))||
-       (String(field2.innerHTML).includes(">b<") &&
-       String(field3.innerHTML).includes(">b<") &&
-       String(field4.innerHTML).includes(">a<") &&
-       String(field5.innerHTML).includes(">a<")))){
+       String(field5.innerHTML).includes(">a<") &&
+       String(field6.innerHTML).includes(">b<")){
         document.getElementById("uncorrect").style.display = "none";
         document.getElementById("correct").style.display = "block";
     }

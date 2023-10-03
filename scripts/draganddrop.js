@@ -263,7 +263,7 @@ Draggable.prototype.init = function() {
         var $over;
 
         $('.hovering').removeClass('hovering');
-
+        
         $clone.hide();
         $over = $(document.elementFromPoint(pos.clientX, pos.clientY)).closest(self.options.droptarget);
         $clone.show();

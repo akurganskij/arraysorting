@@ -208,3 +208,24 @@
 .mathswap .field{
     margin-left: 1em;
 }
+
+.bubbles{
+    margin: 4em 0;
+    position: relative;
+    
+}
+.bubbles h1{
+    color:#292929;
+    margin: 2em;
+    margin-bottom: 1em;
+}
+.bubbles p{
+    color:#292929;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.bubbles svg{
+    height: 30em;
+    width: 100%;
+    background-color: aqua;
+}
